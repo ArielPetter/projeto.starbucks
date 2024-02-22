@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo Starbucks0" class="logo">
+    </header>
+
+    <div class="circulo"></div>
+    <div class="conteudo">
+        <div class="texto">
+            <h2>Não é apenas um café, é um <span>Starbucks</span></h2>
+            <div class="botao">
+                <p>Bem-vindo a um refúgio para os amantes de café, onde cada xícara conta uma história única. Na nossa cafeteria, mergulhe em uma experiência sensorial incomparável, onde o aroma rico e as notas distintas de cada grão transportam você para um mundo de sabores excepcionais.</p>
+                <button>Peça o seu</button>
+            </div>
+        </div>
+        <div class="imagem">
+            <img src="./img/img1.png" alt="copa Starbucks" class="copao">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./img/img-pequena1.png" class="copo-pequeno verde">
+        <img src="./img/img-pequena2.png" class="copo-pequeno laranja">
+        <img src="./img/img-pequena3.png" class="copo-pequeno rosa">
+    </div>
+</body>
+
+<script>
+    let bola = document.querySelector(".circulo")
+    let copao = document.querySelector(".copao")
+    let verde = document.querySelector(".verde")
+    let laranja = document.querySelector(".laranja")
+    let rosa = document.querySelector(".rosa")
+
+    verde.addEventListener("click", () => {
+        copao.src = "./img/img1.png"
+        bola.style.background = "#017413"
+    })
+
+    laranja.addEventListener("click", () => {
+        copao.src = "./img/img2.png"
+        bola.style.background = "#eb7495"
+    })
+
+    rosa.addEventListener("click", () => {
+        copao.src = "./img/img3.png"
+        bola.style.background = "#910071"
+    })
+</script>
+</html>
